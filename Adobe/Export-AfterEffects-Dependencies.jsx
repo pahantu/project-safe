@@ -37,7 +37,7 @@
     var output = new File(app.project.file.fsName + ".psdeps");
     output = output.saveDlg("Save dependency list next to the project", "*.psdeps");
     if (!output) return;
-    if (!/.psdeps$/i.test(output.name)) output = new File(output.fsName + ".psdeps");
+    if (!/\.psdeps$/i.test(output.name)) output = new File(output.fsName + ".psdeps");
     if (output.exists && !confirm("Replace existing dependency list?")) return;
     // Refuse writing over the source project even if an extension was mistyped.
     if (output.fsName.toLowerCase() === app.project.file.fsName.toLowerCase()) {
