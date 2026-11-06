@@ -1,0 +1,26 @@
+# Local builds, generated media and test reports
+*.exe
+*.dll
+*.pdb
+*.zip
+/artifacts/
+/validation/
+/outputs/
+/package/
+/source-copy/
+/tests/ae-exporter-tests.json
+fixtures_*/
+Пример проекта/
+Пример внешнего звука.wav
+
+# Editor settings and credentials
+.vs/
+.vscode/
+*.user
+*.suo
+.env
+.env.*
+*.pem
+*.key
+Thumbs.db
+Desktop.ini
