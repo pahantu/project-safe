@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+ <title id="title">Сейф проекта — сохрани то, что создал</title>
+ <desc id="desc">Локальная копия монтажного проекта с проверкой файлов. Windows, предварительная версия 0.5.</desc>
+ <defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0f141c"/><stop offset="1" stop-color="#1c3032"/></linearGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#8bafab" stroke-opacity=".07"/></pattern>
+ </defs>
+ <rect width="1280" height="420" rx="24" fill="url(#bg)"/>
+ <rect width="1280" height="420" rx="24" fill="url(#grid)"/>
+ <g font-family="Segoe UI,Arial,sans-serif">
+  <rect x="52" y="46" width="48" height="48" rx="14" fill="#7eebc5"/>
+  <g fill="none" stroke="#0f141c" stroke-width="2.6"><rect x="64" y="58" width="24" height="24" rx="2"/><circle cx="76" cy="70" r="5"/><path d="M76 65V75"/></g>
+  <text x="116" y="77" fill="#ecf2f9" font-size="25" font-weight="700">Сейф проекта</text>
+  <text x="52" y="143" fill="#7eebc5" font-size="14" letter-spacing="3">PROJECT SAFE  /  WINDOWS</text>
+  <text x="49" y="211" fill="#ecf2f9" font-size="51" font-weight="700">Сохрани то, что создал.</text>
+  <text x="52" y="256" fill="#a3b5c8" font-size="22">Проект, исходники и проверенная копия — в одной папке.</text>
+  <g fill="#a3b5c8" font-size="16"><text x="52" y="346">Локально</text><text x="226" y="346">Без аккаунта</text><text x="442" y="346">Проверка SHA-256</text></g>
+  <g fill="#7eebc5"><circle cx="177" cy="340" r="3"/><circle cx="393" cy="340" r="3"/></g>
+  <g transform="translate(946 110)">
+   <rect x="-24" y="-28" width="246" height="246" rx="56" fill="#7eebc5" fill-opacity=".06" stroke="#7eebc5" stroke-opacity=".12"/>
+   <rect x="2" y="-2" width="194" height="194" rx="40" fill="#192b2e" stroke="#7eebc5" stroke-opacity=".3"/>
+   <rect x="40" y="36" width="116" height="116" rx="18" fill="none" stroke="#7eebc5" stroke-width="4"/>
+   <circle cx="98" cy="94" r="24" fill="none" stroke="#7eebc5" stroke-width="4"/>
+   <path d="M98 70V118M74 94H122" stroke="#7eebc5" stroke-width="3"/>
+   <circle cx="156" cy="152" r="23" fill="#7eebc5"/><path d="M145 152l8 8 14-16" fill="none" stroke="#0f141c" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <rect x="1059" y="344" width="171" height="32" rx="16" fill="#7eebc5" fill-opacity=".12"/>
+  <text x="1082" y="365" fill="#7eebc5" font-size="13" letter-spacing="1">0.5 / PREVIEW</text>
+ </g>
+</svg>
