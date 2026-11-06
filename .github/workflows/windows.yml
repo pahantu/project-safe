@@ -33,3 +33,9 @@ jobs:
             Сейф проекта.exe
             artifacts/tests/tests.json
             tests/ae-exporter-tests.json
+            LICENSE.md
+            NOTICE
+            README.md
+            docs/USAGE.ru.txt
+            docs/EDITORS.ru.md
+            Adobe/Export-AfterEffects-Dependencies.jsx
