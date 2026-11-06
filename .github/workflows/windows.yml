@@ -1,0 +1,35 @@
+name: Windows build and tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Build and run C# scenarios
+        shell: pwsh
+        run: ./test.ps1
+      - name: Check After Effects exporter contract (mock API)
+        shell: pwsh
+        run: node ./tests/ae-exporter.cjs
+      - name: Upload prototype build and reports
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: project-safe-windows-prototype
+          if-no-files-found: error
+          retention-days: 7
+          path: |
+            Сейф проекта.exe
+            artifacts/tests/tests.json
+            tests/ae-exporter-tests.json
